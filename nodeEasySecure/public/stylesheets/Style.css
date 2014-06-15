@@ -1,0 +1,651 @@
+@CHARSET "UTF-8";
+
+/* definition des generales des balises */
+body
+{
+	background-image: url("../images/fond_body.png");
+	background-position: center;
+	background-repeat: repeat-y;
+	overflow: hidden;
+	color: #140C6B;
+}
+
+img
+{
+	border: none;
+}
+
+span a,span a:visited
+{
+	text-decoration: none;
+	color: black;
+}
+
+a
+{
+	text-decoration: none;
+	color: #140C6B;
+}
+
+
+/* definition des drapeaux de langue */
+.lang
+{
+	position: relative;
+	display: block;
+	float: right;
+	top: -93px;
+	left: -17%;
+}
+
+#fr
+{
+	position: relative;
+	display: block;
+	background-image: url("../images/drapeauFR.png");
+	background-position: 0 -36px;
+	background-repeat: no-repeat;
+	text-decoration: none;
+	width: 45px;
+	height: 33px;
+}
+		
+#en
+{
+	position: relative;
+	display: block;
+	background-image:url("../images/drapeauEN.png");
+	background-position:0 -36px;
+	background-repeat:no-repeat;
+	text-decoration: none;
+	width: 45px;
+	height: 33px;
+	left: 60px;
+	top: -33px;
+}
+
+#es
+{
+	position: relative;
+	display: block;
+	background-image:url("../images/drapeauES.png");
+	background-position:0 -36px;
+	background-repeat:no-repeat;
+	text-decoration: none;
+	width: 45px;
+	height: 33px;
+	left: 120px;
+	top: -66px;
+}
+
+
+/* definition des infobulles */
+span#infoBulle{
+	position:absolute;
+    margin-top:-130px;
+    margin-left:-55px;
+    height: 80px;
+    width: 230px;
+    color: #140C6B;
+    background: white; 
+    padding:15px;
+    border-radius:3px;
+    box-shadow:0 0 2px rgba(0,0,0,.5);
+    transform:scale(0) rotate(-12deg);
+    transition:all .25s;
+    opacity:0;
+	z-index: 1;
+}
+
+
+
+
+/* definition de la page d'acceuil (page de structure generale) */
+.page
+{
+	background: white;
+	position: absolute;
+	
+	margin-left: -400px;
+	left: 50%;
+	top: 0px;
+	width: 800px;
+/* 	height: 110%; */
+}
+
+.banniere
+{
+	position: relative;
+	height: 150px;
+	top: 0px;
+	left: 50%;
+	margin-left: -397px;
+	width: 794px;
+	color: black;
+	background: #140C6B;
+	overflow: hidden;
+}
+
+.titre1
+{
+	position: absolute;
+	display: block;
+	left: -72%;
+	top: 10px;
+}
+
+.titre2
+{
+	position: absolute;
+	display: block;
+	left: 28%;
+	top: 40px;
+}
+
+.logo1
+{
+	position: absolute;
+/* 	background: black; */
+	text-align: center;
+/* 	color: white; */
+	left: 1%;
+	top: 200px;
+	width: 140px;
+	height: 30px;
+}
+
+.contenu
+{
+	background: #CF0000;
+	position: relative;
+	
+	text-align: center;
+	
+	left: 50%;
+	margin-left: -397px;
+	width: 794px;
+	
+	/*overflow: auto;*/
+}
+
+.contenu div
+{
+	position: relative;
+	left: 50%;
+	margin-left: -25%;
+	width: 50%;
+}
+
+.navigation
+{
+	background: #DEE600;
+	position: relative;
+	
+	height: 100px;
+	margin-left: -397px;
+	left: 50%;
+	width: 794px;
+}
+
+.navigation a
+{
+	position: relative;
+	left: 3%;
+	top: 39%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	padding-left: 4%;
+	padding-right: 3%;
+	border: 1px solid black;
+}
+
+.navigation_1
+{
+	background-color: orange;
+}
+
+.navigation_2
+{
+	background-color: red;
+}
+
+.navigation_3
+{
+	background-color: yellow;
+}
+
+.navigation_4
+{
+	background-color: green;
+}
+
+.info
+{
+	position: relative;
+	color: black;
+	background: #CF0000;
+	
+	left: 50%;
+	margin-left: -397px;
+	width: 794px;
+	height: 75px;
+	
+	font-family: Tahoma;
+	font-size: small;
+	display: block;
+}
+
+.info span
+{
+	position: relative;
+	left: 39%;
+	top: 60%;
+}
+
+/* Agencement des paragraphe a l'interieur des page */
+/* page d'ACCEUIL - BILAN CIRCONSTANCIEL */
+.observer_1_observer
+{
+	height: 125px;
+	font-size: larger;
+	
+/* 	background: purple; */
+}
+.observer_1_observer span
+{
+	position: relative;
+	top: 10%;
+}
+
+.observer_2_rapport
+{
+	height: 75px;
+	z-index: 3;
+/* 	background: green; */
+}
+.observer_2_rapport span
+{
+	position: relative;
+	top: 40%;
+}
+.observer_2_rapport_1
+{
+	display: none;
+	height: 100px;
+	
+	z-index: 6;
+/* 	background: yellow; */
+}
+.observer_2_rapport_1 span
+{
+	position: relative;
+	top: 3%;
+}
+
+.observer_3_danger
+{
+	height: 75px;
+	
+/* 	background: olive; */
+}
+.observer_3_danger span
+{
+	position: relative;
+	top: 40%;
+}
+
+.observer_3_danger_1_2
+{
+	display: none;
+	height: 75px;
+	
+	z-index: 6;
+	background: yellow;
+}
+
+.observer_3_danger_1
+{
+	position: relative;
+/* 	float: left; */
+	
+	background: orange;
+}
+.observer_3_danger_1 span
+{
+	
+}
+
+.observer_3_danger_2
+{
+	position:relative;
+	margin-left:30% ;
+/* 	background: navy; */
+}
+.observer_3_danger_2 span
+{
+/* 	position: relative; */
+/* 	top: 25%; */
+/* 	left: -10%; */
+/* 	padding-top: 3%; */
+/* 	padding-bottom: 3%; */
+/* 	padding-left: 4%; */
+/* 	padding-right: 3%; */
+}
+
+.observer_4_information
+{
+	height: 75px;
+	
+	z-index: 3;
+/* 	background: blue; */
+}
+.observer_4_information span
+{
+	position: relative;
+	top: 30%;
+}
+
+.observer_4_information_1
+{
+	display: none;
+	height: 75px;
+	
+	z-index: 6;
+/* 	background: yellow; */
+}
+.observer_4_information_1 span
+{
+	position: relative;
+	top: 30%;
+}
+
+.observer_5_secours
+{
+	height: 75px;
+	
+/* 	background: silver; */
+}
+.observer_5_secours span
+{
+	position: relative;
+	top: 40%;
+}
+
+.observer_5_secours_1
+{
+	display: none;
+	height: 75px;
+	
+	z-index: 6;
+/* 	background: yellow; */
+}
+.observer_5_secours_1 span
+{
+	position: relative;
+	top: 10%;
+}
+/* page des DANGERS */
+.danger_1_supprimable
+{
+	display: block;
+	position: relative;
+	left: 3%;
+	width: 30%;
+	height: 25px;
+	z-index: 6;
+/* 	background: #CF0000; */
+	background: blue;
+}
+
+.danger_2_supprime
+{
+	display: block;
+	position: relative;
+	width: 30%;
+	height: 25px;
+	left: 3%;
+	z-index: 5;
+/* 	background: #CF0000; */
+	background: aqua;
+}
+
+.danger_3_non_supprimable
+{
+	display: block;
+	position: relative;
+	left: 3%;
+	width: 30%;
+	height: 25px;
+	z-index: 4;
+/* 	background: #CF0000; */
+	background: fuchsia;
+}
+
+.danger_4_balisage
+{
+	display: block;
+	position: relative;
+	width: 30%;
+	height: 25px;
+	left: 3%;
+	z-index: 3;
+/* 	background: #CF0000; */
+	background: green;
+}
+
+.danger_5_supprimable_urgence
+{
+	display: block;
+	position: relative;
+	left: 3%;
+	width: 30%;
+	height: 25px;
+	z-index: 2;
+/* 	background: #CF0000; */
+	background: orange;
+}
+
+.danger_6_degagement
+{
+	display: block;
+	position: relative;
+	width: 30%;
+	height: 25px;
+	left: 3%;
+	z-index: 1;
+/* 	background: #CF0000; */
+	background: purple;
+}
+/* page des Urgences Vitale */
+.Urgence_vitale_1
+{
+	height: 125px;
+	font-size: larger;
+	z-index: 4;
+}
+
+.Urgence_vitale_1 span
+{
+	position: relative;
+	top: 10%;
+}
+
+.Urgence_vitale_1_OVR
+{
+	height: 75px;
+	
+	z-index: 1;
+}
+
+.Urgence_vitale_1_OVR span
+{
+	position: relative;
+	top: 40%;
+}
+
+.Urgence_vitale_2_hemorragie
+{
+	height: 75px;
+	
+	z-index: 1;
+}
+
+.Urgence_vitale_2_hemorragie span
+{
+	position: relative;
+	top: 40%;
+}
+
+.Urgence_vitale_3_inconscience
+{
+	height: 75px;
+	
+	z-index: 1;
+}
+
+.Urgence_vitale_3_inconscience span
+{
+	position: relative;
+	top: 40%;
+}
+
+/* page des Hemoragies */
+.hemoragie_1_oui
+{
+	display: block;
+	position: relative;
+	height: 100px;
+	width: 40%;
+	left: 30%;
+/* 	top: -325px; */
+/* 	z-index: 1; */
+/* 	background: blue; */
+/* 	background: #CF0000; */
+}
+.hemoragie_1_oui span
+{
+	position: relative;
+	top: 40%;
+}
+
+.hemoragie_1
+{
+	display: block;
+	position: relative;
+/* 	height: 100px; */
+/* 	width: 40%; */
+/* 	left: 30%; */
+/* 	top: -325px; */
+/* 	z-index: 1; */
+/* 	background: blue; */
+/* 	background: #CF0000; */
+}
+
+.hemoragie_1_1_sans
+{
+	display: block;
+	position: relative;
+	height: 100px;
+	width: 40%;
+	left: 30%;
+/* 	top: -325px; */
+/* 	z-index: 1; */
+/* 	background: blue; */
+/* 	background: #CF0000; */
+}
+.hemoragie_1_1_sans span
+{
+	position: relative;
+	top: 40%;
+}
+
+.hemoragie_1_2_avec
+{
+	display: block;
+	position: relative;
+	height: 100px;
+	width: 40%;
+	left: 30%;
+/* 	top: -325px; */
+/* 	z-index: 1; */
+/* 	background: blue; */
+/* 	background: #CF0000; */
+}
+.hemoragie_1_2_avec p
+{
+	position: relative;
+	top: 40%;
+}
+
+.hemoragie_1_3_amputation
+{
+	display: block;
+	position: relative;
+	height: 100px;
+	width: 40%;
+	left: 30%;
+/* 	top: -325px; */
+/* 	z-index: 1; */
+/* 	background: blue; */
+/* 	background: #CF0000; */
+}
+.hemoragie_1_3_amputation p
+{
+	position: relative;
+	top: 40%;
+}
+
+.hemoragie_2_non
+{
+	display: block;
+	position: relative;
+	height: 100px;
+	width: 40%;
+	left: 30%;
+/* 	top: -325px; */
+/* 	z-index: 1; */
+/* 	background: yellow; */
+/* 	background: #CF0000; */
+}
+.hemoragie_2_non p
+{
+	position: relative;
+	top: 40%;
+}
+/* page des Conscients */
+.conscient_1_oui
+{
+	display: block;
+	position: relative;
+	height: 100px;
+	width: 40%;
+	left: 30%;
+/* 	top: -325px; */
+/* 	z-index: 1; */
+/* 	background: blue; */
+/* 	background: #CF0000; */
+}
+.conscient_1_oui p
+{
+	position: relative;
+	top: 40%;
+}
+
+.conscient_2_non
+{
+	display: block;
+	position: relative;
+	height: 100px;
+	width: 40%;
+	left: 30%;
+/* 	top: -325px; */
+/* 	z-index: 1; */
+/* 	background: yellow; */
+/* 	background: #CF0000; */
+}
+.conscient_2_non p
+{
+	position: relative;
+	top: 40%;
+}
+

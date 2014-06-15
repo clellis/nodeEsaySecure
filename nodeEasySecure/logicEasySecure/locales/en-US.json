@@ -1,0 +1,43 @@
+{
+	"BCi_text"					: "Bilan Circonstanciel en",
+	"BUV_text"					: "Bilan d'urgence vitale en",
+	"BCo_text"					: "Bilan complementaire en",
+	"SUR_text"					: "La surveillance en",
+	"info_text_1"				: "Website made by: ",
+	"info_text_2"				: " e-DevInfo",
+	
+	"BCi_obs_text_1"			: "Tout d'abord, il faut OBSERVER et faire un état des lieux. en",
+	"BCi_obs_text_2"			: "On appel cela un BILAN CIRCONSTANCIEL. en",
+	
+	"BCi_rapport_text_1"		: "Que s'est-il passé ? en",
+	"BCi_rapport_1_text_1"		: "Interroger les témoins, la victime ou son entourage pour déterminer la nature de l’intervention ou les circonstance de l’accident ou de l’affection. en",
+	"BCi_rapport_1_text_2"		: "Cela permet à l’équipe de secouriste de s’imprégner de l’intervention afin de mieux anticiper les gestes et conduites à tenir afférentes. en",
+	
+	"BCi_danger_text_1"			: "Existe-t-il un danger ?",
+	"BCi_danger_1_text_1"		: "C’est un accident de la circulation.",
+	"BCi_danger_2_text_1"		: "Ce n’est pas un accident de la circulation.",
+	
+	"BCi_information_text_1"	: "Les informations en ma possession<br/> sont elles exactes ?",
+	"BCi_information_1_text_1"	: "L’adresse est elle exacte?</br>Le nombre et l’état de mes victimes est il exacte?",
+	
+	"BCi_secours_text_1"		: "Les secours sont-ils suffisants ?",
+	"BCi_secours_1_text_1"		: "Demander des renforts si les secours sur place sont insuffisant en moyen humains et matériel. En règle général: 1 VSAV = 2 blessés légers ou 1 blessé grave, 1 urgence vitale non stabilisée ou traitée = un renfort de médecin.",
+	
+	"Hello": "Hello",
+	"app.name": "i18n en",
+	
+	"Hello %s, how are you today?": "Hallo %s, wie geht es dir heute?",
+    "weekend": "Wochenende",
+    "Hello %s, how are you today? How was your %s.": "Hallo %s, wie geht es dir heute? Wie war dein %s.",
+    "Hi": "Hi",
+    "Howdy": "Hallöchen",
+    "%s cat": {
+        "one": "%s Katze",
+        "other": "%s Katzen"
+    },
+    "There is one monkey in the %%s": {
+        "one": "Im %%s sitzt ein Affe",
+        "other": "Im %%s sitzen %d Affen"
+    },
+    "tree": "Baum"
+}
